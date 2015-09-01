@@ -1,0 +1,536 @@
+@charset "utf-8";
+/*===============
+contain : construct page layout like page background, 
+header, footer, global navigation and so on =====*/
+
+/*-----  contents -------
+
+	1: Wrap Section
+	2: Header Area
+		: gnavArea
+	3: Main Area
+		: contentArea
+		: sideArea
+	4: Footer Area
+	  
+----------------------*/
+
+@font-face {
+	font-family: "Myriad Pro";
+	src: url(../fonts/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+	font-family: "Myriad Pro Sem";
+	src: url(../fonts/MYRIADPRO-SEMIBOLD.OTF);
+}
+/*
+===== 1: Wrap Section ===========================*/
+#wrap {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#wrap #wrapInner {
+	width: 1050px;
+	height: auto;
+	margin: 0px auto;
+}
+
+/*
+===== 2: Main Area ===============================*/
+#mainArea {
+	float: right;
+	width: 775px;
+	height: auto;
+}
+#mainArea #headerArea {
+	float: right;
+	width: 775px;
+	height: 49px;
+	margin: 20px 0 0 0;
+	background: url(../images/gnav_bg_001.gif) no-repeat;
+}
+/* #gnavArea
+----------------------------*/
+#mainArea #headerArea #gnavArea {
+	width: 775px;
+	height: 49px;
+}
+#mainArea #headerArea #gnavArea ul {
+	margin: 14px 0 0 102px;
+}
+#mainArea #headerArea #gnavArea ul li {
+	float: left;
+	margin: 0 60px 0 0;
+}
+#mainArea #headerArea #gnavArea ul li:last-child {
+	margin: 0 0 0 0;
+}
+#mainArea #headerArea #gnavArea ul li a {
+	font-size: 18px;
+	text-decoration: none;
+	color: #db7696;
+	letter-spacing: 3px;
+}
+#mainArea #headerArea #gnavArea ul li a:hover {
+	color: #734c59;
+}
+/* #contentArea
+----------------------------*/
+#mainArea #contentArea {
+	float: right;
+	width: 775px;
+	height: auto;
+	margin: 21px 0 0 0;
+}
+#mainArea #contentArea .slideArea {
+	width: 775px;
+	height: 517px;
+}
+#mainArea #contentArea .fashionArea {
+	width: 775px;
+	height: 830px;
+	margin: 21px 0 0 0;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 {
+	width: 775px;
+	height: 62px;
+	background: url(../images/content_bg_001.gif) no-repeat;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 .fashionBlockA02 {
+	width: 500px;
+	height: 62px;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 .fashionBlockA03 {
+	width: 250px;
+	height: 62px;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 .fashionBlockA03 h2 {
+	margin: 0 auto;
+	width: 250px;
+	height: auto;
+	text-align: center;
+	padding: 20px 0 0 0;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 .fashionBlockA03 a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #43b1b1;
+	font-family: "Myriad Pro Sem";
+	font-weight: bold;
+
+}
+#mainArea #contentArea .fashionArea .fashionBlockA01 .fashionBlockA03 a:hover {
+	color: #F46A00;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 {
+	width: 757px;
+	height: auto;
+	margin: 0 0 0 9px;
+	background-color: #F0D800;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 ul li {
+	float: left;
+	margin: 0 3px 5px 0;
+	border: 1px solid #6fe1e2;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 ul li:last-child {
+	margin: 0 0 0 0;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 .fashionBlockA05 {
+	position: relative;
+	width: 248px;
+	height: 378px;
+	overflow: hidden;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 .fashionBlockA05 img {
+	display: block;
+    position: relative;
+	-webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 .fashionBlockA05 .caption {
+	width: 248px;
+	height: 378px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+	opacity: 0;
+	background: rgba(0,0,0,0.5) url(../images/content_img_015.png) no-repeat center;
+    -webkit-transition: all 0.4s ease-in-out;
+   	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 .fashionBlockA05:hover .caption {
+	opacity: 1;
+	cursor: pointer;
+}
+#mainArea #contentArea .fashionArea .fashionBlockA04 .fashionBlockA05:hover img {
+	-ms-transform: scale(1.1);
+  	-webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#mainArea #contentArea .makeUpArea {
+	width: 775px;
+	height: 444px;
+	margin: 22px 0 0 0;
+	position: relative;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 {
+	width: 775px;
+	height: 62px;
+	background: url(../images/content_bg_002.gif) no-repeat;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 .makeUpBlockA02 {
+	width: 500px;
+	height: 62px;
+	text-indent: -99999px;
+	overflow: hidden;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 .makeUpBlockA03 {
+	width: 250px;
+	height: 62px;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 .makeUpBlockA03 h2 {
+	margin: 0 auto;
+	width: 250px;
+	height: auto;
+	text-align: center;
+	padding: 20px 0 0 17px;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 .makeUpBlockA03 a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #beda5c;
+	font-family: "Myriad Pro Sem";
+	font-weight: bold;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA01 .makeUpBlockA03 a:hover {
+	color: #F46A00;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 {
+	width: 757px;
+	height: auto;
+	margin: 0 0 0 9px;
+	background-color: #F0D800;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 ul li {
+	float: left;
+	margin: 0 3px 5px 0;
+	border: 1px solid #beda5c;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 ul li:last-child {
+	margin: 0 0 0 0;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 {
+	position: relative;
+	width: 248px;
+	height: 340px;
+	overflow: hidden;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 .box {
+	position: absolute;
+	width: 248px;
+	height: 71px;
+	background: rgba(217,117,146,0.8);
+	bottom: -71px;
+	text-align: center;
+	transition: 0.7s ease-in-out;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05:hover .box {
+	bottom: 0px;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 .box .btnRec {
+	float: left;
+	margin: 11px 0px 0px 5px;
+	padding: 7px 10px;
+	background-color: #a7e0f5;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #db6e90;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 .box .btnRec:hover {
+	color: #fff;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 .box .btnCul {
+	float: right;
+	margin: 11px 5px 0px 0px;
+	padding: 7px 24px;
+	background-color: #beda5c;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #db6e90;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 0;
+}
+#mainArea #contentArea .makeUpArea .makeUpBlockA04 .makeUpBlockA05 .box .btnCul:hover {
+	color: #fff;
+} 
+/*===== 3: Side Area ===============================*/
+#sideArea {
+	float: left;
+	width: 268px;
+	height: 1917px;
+	margin: 5px 0 0 0;
+	padding: 10px 0 0 0;
+	background-color: #fff;
+	border: 1px dashed #db7696;
+	text-align: center;
+}
+/* .sideBlockA01
+----------------------------*/
+#sideArea .sideBlockA01 {
+	width: 268px;
+	height: 600px;
+}
+#sideArea .sideBlockA01 .searchArea {
+	width: 203px;
+	height: 178px;
+	margin: 13px 0 0 32px;
+	padding: 25px 0 0 0;
+	position: relative;
+	text-align: center;
+}
+#sideArea .sideBlockA01 .searchArea:before {
+	display: block;
+	content: '';
+	width: 203px;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	background: url(../images/side_list_001.png) no-repeat;
+}
+#sideArea .sideBlockA01 .searchArea:after {
+	display: block;
+	content: '';
+	width: 203px;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	background: url(../images/side_list_001.png) no-repeat;
+}
+#sideArea .sideBlockA01 .searchArea .searchBlockA01 {
+	width: 190px;
+	height: 16px;
+	padding: 5px 0 5px 5px;
+	border-radius: 10px;
+	border: 1px dashed #fe859d;
+}
+#sideArea .sideBlockA01 .searchArea input[type=text] {
+	float: left;
+	color: #895869;
+	width: 130px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+}
+#sideArea .sideBlockA01 .searchArea input[type=image] {
+	float: right;
+	margin: -6px 0 0 0;
+}
+#sideArea .sideBlockA01 .searchArea input[type=email] {
+	width: 190px;
+	margin: 22px 0 0 0;
+	padding: 5px 5px 5px 5px;
+	border: 1px dashed #895869;
+	color: #895869;
+	font-weight: bold;
+	outline: none;
+}
+#sideArea .sideBlockA01 .searchArea input[type=submit] {
+	text-align: center;
+	margin: 10px 0 0 0;
+	padding: 5px 22px;
+	background-color: #f19cad;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+#sideArea .sideBlockA01 .searchArea input[type=submit]:hover {
+	background-color: #fba3b5;
+	color: #fff;
+	transition: 0.5s;
+}
+#sideArea .sideBlockA01 .searchArea ul {
+	margin: 21px 0 0 27px;
+}
+#sideArea .sideBlockA01 .searchArea ul li {
+	float: left;
+	margin: 0 8px 0 0;
+}
+#sideArea .sideBlockA01 .searchArea ul li:hover {
+	opacity: 0.5;
+}
+/* .sideBlockB01
+----------------------------*/
+#sideArea .sideBlockB01 {
+	width: 268px;
+	height: 413px;
+	margin: 12px 0 0 0;
+}
+#sideArea .sideBlockB01 .sideBlockB02 {
+	width: 268px;
+	height: 62px;
+	background: url(../images/side_bg_001.gif) no-repeat;
+}
+#sideArea .sideBlockB01 .sideBlockB03 {
+	width: 255px;
+	height: 351px;
+	margin: 0 0 0 7px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #ffcad8;
+}
+#sideArea .sideBlockB01 .sideBlockB03 ul {
+	margin: 0 6px;
+}
+#sideArea .sideBlockB01 .sideBlockB03 .sideBlockItemB01 {
+	width: 255px;
+	height: 112px;
+	background-color: #ffcad8;
+	border-bottom: 5px solid #ffdde6;
+}
+#sideArea .sideBlockB01 .sideBlockB03 .sideBlockItemB01 .sideBlockItemB02 {
+	width: 142px;
+	margin: 10px 7px 0 0;
+	letter-spacing: 0;
+}
+/* .sideBlockC01
+----------------------------*/
+#sideArea .sideBlockC01 {
+	width: 268px;
+	height: 373px;
+	margin: 34px 0 0 0;
+}
+#sideArea .sideBlockC01 .sideBlockC02 {
+	width: 268px;
+	height: 62px;
+	background: url(../images/side_bg_002.gif) no-repeat;
+}
+#sideArea .sideBlockC01 .sideBlockC03 {
+	width: 255px;
+	height: 311px;
+	margin: 0 0 0 7px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: #c7f0ff;
+}
+#sideArea .sideBlockC01 .sideBlockC03 ul {
+	margin: 0 6px;
+}
+#sideArea .sideBlockC01 .sideBlockC03 .sideBlockItemC01 {
+	width: 255px;
+	height: 100px;
+	background-color: #a7e0f5;
+	border-bottom: 5px solid #c7f0ff;
+}
+#sideArea .sideBlockC01 .sideBlockC03 .sideBlockItemC01 .sideBlockItemC02 {
+	width: 152px;
+	margin: 10px 7px 0 0;
+	letter-spacing: 0;
+}
+/* .sideBlockD01
+----------------------------*/
+#sideArea .sideBlockD01 {
+	width: 268px;
+	height: 413px;
+	margin: 31px 0 0 0;
+}
+#sideArea .sideBlockD01 .view {
+	margin: 13px 0 0 0;
+}
+#sideArea .sideBlockD01 .view a {
+	text-decoration: none;
+	color: #ea6153;
+	font-family: "Myriad Pro Sem";
+}
+#sideArea .sideBlockD01 .sideBlockD02 {
+	width: 268px;
+	height: 62px;
+	background: url(../images/side_bg_003.gif) no-repeat;
+}
+
+/*
+===== 4: Footer Area =============================*/
+#footerArea {
+	float: left;
+	width: 1048px;
+	height: 187px;
+	margin: 15px 0 0 0;
+}
+#footerArea .footerBlockA01 {
+	float: left;
+	width: 1048px;
+	height: 161px;
+	background: url(../images/footer_bg_001.gif) no-repeat;
+	border: 1px dashed #db7696;
+}
+#footerArea .footerBlockA01 ul.listBlockA01 {
+	float: left;
+	margin: 41px 100px 0 32px;
+}
+#footerArea .footerBlockA01 ul.listBlockA01 li {
+	margin: 0 0 6px 0;
+}
+#footerArea .footerBlockA01 ul.listBlockA01 li a {
+	text-decoration: none;
+	color: #655057;
+}
+#footerArea .footerBlockA01 ul.listBlockA01 li a:hover {
+	opacity: 0.5;
+}
+#footerArea .footerBlockA01 ul.listBlockA02 {
+	float: left;
+	margin: 41px 100px 0 32px;
+}
+#footerArea .footerBlockA01 ul.listBlockA02 li {
+	margin: 0 0 6px 0;
+}
+#footerArea .footerBlockA01 ul.listBlockA02 li a {
+	text-decoration: none;
+	color: #655057;
+}
+#footerArea .footerBlockA01 ul.listBlockA02 li a:hover {
+	opacity: 0.5;
+}
+#footerArea .footerBlockA01 ul.listBlockA03 {
+	float: left;
+	margin: 41px 0 0 32px;
+}
+#footerArea .footerBlockA01 ul.listBlockA03 li {
+	margin: 0 0 6px 0;
+}
+#footerArea .footerBlockA01 ul.listBlockA03 li a {
+	text-decoration: none;
+	color: #655057;
+}
+#footerArea .footerBlockA01 ul.listBlockA03 li a:hover {
+	opacity: 0.5;
+}
+#footerArea .footerBlockA02 {
+	float: left;
+	width: 1048px;
+	height: 27px;
+	border-right: 1px dashed #db7696;
+	border-left: 1px dashed #db7696;
+	border-bottom: 1px dashed #db7696;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
